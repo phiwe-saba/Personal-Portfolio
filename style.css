@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    display: block;
+    margin: 8px;
 }
 
 /*#header {
@@ -77,34 +82,66 @@ nav ul li a:hover::after {
     color: #ababab;
 }
 
-/*.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}*/
+section {
+    box-sizing: border-box;
+    min-height: fit-content;
+    padding-top: 4vh;
+    margin: 0 10rem;
+    height: 96vh;
+}
 
-.about-col-1 {
-    flex-basis: 35%;
+.section-container {
+    gap: 4rem;
+    height: 100%;
 }
 
 .about-col-1 img {
     width: 300px;
     height: 300px;
-    margin: 0 auto;
     border-radius: 100%;
-}
-
-.about-col-2 {
-    flex-basis: 65%;
-    margin-top: 75px;
 }
 
 .profile {
     display: flex;
     justify-content: center;
+    gap: 5rem;
+    height: 60vh;
+    /*text-align: center;*/
+}
+
+.image-section {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    display: flex;
+    
+}
+
+.image-section img {
+    border-radius: 100%;
+}
+
+.header-text {
+    align-self: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.title {
+    font-size: 3rem;
     text-align: center;
 }
 
+.text-section {
+    margin: 1rem;
+    text-align: center;
+}
+
+ div {
+    display: block;
+ }
+ 
 .buttons-container {
     gap: 1rem;
     display: flex;
@@ -128,11 +165,17 @@ nav ul li a:hover::after {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .socials-container img{
     width: 32px;
     height: 32px;
+}
+
+.icon {
+    height: 2rem;
+    cursor: pointer;
 }
 
 .certs-container {
