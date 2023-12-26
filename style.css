@@ -79,7 +79,7 @@ nav ul li a:hover::after {
 
 /* Profile */
 #my-profile {
-    height: 85vh;
+    height: 95vh;
 }
 
 #about {
@@ -143,9 +143,9 @@ section {
     text-align: center;
 }
 
- div {
+div {
     display: block;
- }
+}
 
 .buttons-container {
     gap: 1rem;
@@ -164,6 +164,7 @@ section {
 
 .btn-color:hover {
     background-color: #00ccff;
+    color: black;
 }
 
 .socials-container {
@@ -231,10 +232,6 @@ section {
     gap: 2rem;
 }
 
-/*.details-container {
-    padding: 30p;
-}*/
-
 .article-container {
     display: flex;
     text-align: initial;
@@ -265,4 +262,14 @@ article h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-container {
+    justify-content: center;
 }
