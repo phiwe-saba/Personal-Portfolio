@@ -1,185 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Sibulele Saba</title>
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <div id="logo">
-                    <h1>Sibulele</h1>
-                </div>
-                <ul>
-                    <li><a href="#my-profile">About</a></li>
-                    <li><a href="#experience">Skills</a></li>
-                    <li><a href="#projects">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sibulele Saba</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sibulele Saba</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </div>
-    <div id="my-profile">
-        <div class="">
-            <section class="section-container">
-                <div class="profile">
-                    <div class="image-section">
-                        <img src="./images/image2.jpeg" alt="">
-                    </div>
-                    <div class="header-text">
-                        <h1 class="title">Sibulele Saba</h1>
-                        <p class="text-section">Software Developer</p>
-                        <div class="buttons-container">
-                            <button class="btn-color" onclick="window.open('./assets/Sibulele Saba CV.pdf')">Download CV</button>
-                            <button class="btn-color">Contact Info</button>
-                        </div>
-                        <div class="socials-container">
-                            <img src="./images/github.png" alt="Github profile" class="icon" onclick="window.location.assign('https://github.com/phiwe-saba')">
-                            <img src="./images/linkedin.png" alt="LinkedIn profile" class="icon" onclick="window.location.assign('https://www.linkedin.com/in/sibulele-saba/')">
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-    </div>
-    <div id="experience">
-        <div class="container">
-            <h1>Experience</h1>
-            <div class="skills-container">
-                <div class="details-container">
-                    <h2>Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./images/tick.png" alt="" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/tick.png" alt="" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/tick.png" alt="" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/tick.png" alt="" class="icon">
-                            <div>
-                                <h3>jQuery</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./images/image2.jpeg" alt="" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Sibulele Saba</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Sibulele Saba CV.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+            <img src="./images/github.png" alt="Github profile" class="icon" onclick="window.location.assign('https://github.com/phiwe-saba')">
+            <img src="./images/linkedin.png" alt="LinkedIn profile" class="icon" onclick="window.location.assign('https://www.linkedin.com/in/sibulele-saba/')">
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+                <article>
+                    <img src="./images/tick.png" alt="" class="icon">
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
                     </div>
-                </div>
-                <div class="details-container">
-                    <h2>Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./images/tick.png" alt="" class="icon">
-                            <div>
-                                <h3>C#</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/tick.png" alt="" class="icon">
-                            <div> 
-                                <h3>Laravel</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/tick.png" alt="" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/tick.png" alt="" class="icon">
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/tick.png" alt="" class="icon">
-                            <div>
-                                <h3>Microsoft SQL Server</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
+                </article>
+                <article>
+                    <img src="./images/tick.png" alt="" class="icon">
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
                     </div>
-                </div>
+                </article>
+                <article>
+                    <img src="./images/tick.png" alt="" class="icon">
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./images/tick.png" alt="" class="icon">
+                    <div>
+                        <h3>jQuery</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
             </div>
-        </div>
-    </div>
-    <div id="projects">
-        <div class="container">
-            <h1>Projects</h1>
-            <div class="projects">
-                <div class="project-container">
-                    <div class="project-details">
-                        <div class="project-image">
-                            <img src="./images/Screenshot 2023-03-30 173812.png" alt="">
-                        </div>
-                        <h2 class="project-title">we-recruit</h2>
-                        <div class="btn-container">
-                            <button class="btn-color" onclick="window.location.assign('https://github.com/phiwe-saba')">Github</button>
-                        </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+                <article>
+                    <img src="./images/tick.png" alt="" class="icon">
+                    <div>
+                        <h3>C#</h3>
+                        <p>Intermediate</p>
                     </div>
-                    <div class="project-details">
-                        <div class="project-image">
-                            <img src="./images/Screenshot 2023-10-05 123931.png" alt="">
-                        </div>
-                        <h2 class="project-title">service now</h2>
-                        <div class="btn-container">
-                            <button class="btn-color" onclick="window.location.assign('https://github.com/phiwe-saba')">Github</button>
-                        </div>
+                </article>
+                <article>
+                    <img src="./images/tick.png" alt="" class="icon">
+                    <div> 
+                        <h3>Laravel</h3>
+                        <p>Intermediate</p>
                     </div>
-                    <div class="project-details">
-                        <div class="project-image">
-                            <img src="./images/rent-a-book.png" alt="">
-                        </div>
-                        <h2 class="project-title">rent-a-book</h2>
-                        <div class="btn-container">
-                            <button class="btn-color" onclick="window.location.assign('https://github.com/phiwe-saba')">Github</button>
-                        </div>
+                </article>
+                <article>
+                    <img src="./images/tick.png" alt="" class="icon">
+                    <div>
+                        <h3>Git</h3>
+                        <p>Experienced</p>
                     </div>
-                </div>
+                </article>
+                <article>
+                    <img src="./images/tick.png" alt="" class="icon">
+                    <div>
+                        <h3>MySQL</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./images/tick.png" alt="" class="icon">
+                    <div>
+                        <h3>Microsoft SQL Server</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
             </div>
-        </div> 
-    </div>
-    <div id="contact">
-        <div class="container">
-            <h1>Contact</h1>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <img src="./images/email.png" alt="" class="icon">
-                    <p>
-                        <a href="mailto:sabasbulele81@gmail.com">sabasbulele81@gmail.com</a>
-                    </p>
-                </div>
-                <div class="contact-info">
-                    <img src="./images/linkedin.png" alt="LinkedIn profile" class="icon" onclick="window.location.assign('https://www.linkedin.com/in/sibulele-saba/')">
-                    <p>LinkedIn</p>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-    <div id="footer">
-        <p>Copyright &#169; Sibulele Saba</p>
-    </div>
-</body>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="project-container">
+                <img src="./images/Screenshot 2023-03-30 173812.png" alt="">
+            </div>
+            <h2 class="experience-sub-title project-title">we-recruit</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.location.assign('https://github.com/phiwe-saba')">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="project-container">
+                <img src="./images/Screenshot 2023-10-05 123931.png" alt="">
+            </div>
+            <h2 class="experience-sub-title project-title">service now</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.location.assign('https://github.com/phiwe-saba')">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="project-container">
+                <img src="./images/rent-a-book.png" alt="">
+            </div>
+            <h2 class="experience-sub-title project-title">rent-a-book</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.location.assign('https://github.com/phiwe-saba')">Github</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./images/email.png" alt="" class="icon">
+            <p>
+                <a href="mailto:sabasbulele81@gmail.com">sabasbulele81@gmail.com</a>
+            </p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./images/linkedin.png" alt="LinkedIn profile" class="icon" onclick="window.location.assign('https://www.linkedin.com/in/sibulele-saba/')">
+            <p>
+                <a href="https://www.linkedin.com/in/sibulele-saba/">LinkedIn</a>
+            </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; Saba Sibulele. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
