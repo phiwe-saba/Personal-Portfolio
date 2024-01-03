@@ -146,7 +146,7 @@ a:hover {
   
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: 80vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -440,7 +440,7 @@ footer p {
 /* MEDIA QUERIES */
 @media screen and (max-width: 1400px) {
     #profile {
-      height: 80vh;
+      height: 60vh;
       margin-bottom: 6rem;
     }
     .about-containers {
@@ -492,10 +492,10 @@ footer p {
 @media screen and (max-width: 600px) {
     #contact,
     footer {
-      height: 40vh;
+      height: 30vh;
     }
     #profile {
-      height: 83vh;
+      height: 20vh;
       margin-bottom: 0;
     }
     article {
