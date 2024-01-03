@@ -1,5 +1,6 @@
 ## Personal Profile
-![Screenshot 2024-01-03 204606](https://github.com/phiwe-saba/Personal-Portfolio/assets/74997133/08eb16e2-e6d9-43d8-81b5-219547626ff3)
+
+![Screenshot 2024-01-03 204606](https://github.com/phiwe-saba/Personal-Portfolio/assets/74997133/285e1b56-4efa-4c80-ad63-77c9375d3d89)
 
 
 Github Image/Link
