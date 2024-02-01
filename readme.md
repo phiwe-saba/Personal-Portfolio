@@ -1,5 +1,7 @@
 ## Personal Profile
 
+![Screenshot 2024-01-03 204606](https://github.com/phiwe-saba/Personal-Portfolio/assets/74997133/285e1b56-4efa-4c80-ad63-77c9375d3d89)
+
 
 Github Image/Link
 <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
